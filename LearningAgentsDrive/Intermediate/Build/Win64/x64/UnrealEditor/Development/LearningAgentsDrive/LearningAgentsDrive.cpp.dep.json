@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "f:\\unreal projects\\learningagentsdrive\\source\\learningagentsdrive\\learningagentsdrive.cpp",
+        "ProvidedModule": "",
+        "PCH": "f:\\unreal projects\\learningagentsdrive\\intermediate\\build\\win64\\x64\\learningagentsdriveeditor\\development\\unrealed\\sharedpch.unrealed.cpp20.h.pch",
+        "Includes": [
+            "f:\\unreal projects\\learningagentsdrive\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\learningagentsdrive\\definitions.learningagentsdrive.h",
+            "f:\\unreal projects\\learningagentsdrive\\source\\learningagentsdrive\\learningagentsdrive.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

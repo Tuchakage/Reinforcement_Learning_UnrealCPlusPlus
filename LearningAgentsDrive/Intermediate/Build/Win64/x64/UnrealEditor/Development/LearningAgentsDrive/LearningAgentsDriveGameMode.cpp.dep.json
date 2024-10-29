@@ -1,0 +1,21 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "f:\\unreal projects\\learningagentsdrive\\source\\learningagentsdrive\\learningagentsdrivegamemode.cpp",
+        "ProvidedModule": "",
+        "PCH": "f:\\unreal projects\\learningagentsdrive\\intermediate\\build\\win64\\x64\\learningagentsdriveeditor\\development\\unrealed\\sharedpch.unrealed.cpp20.h.pch",
+        "Includes": [
+            "f:\\unreal projects\\learningagentsdrive\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\learningagentsdrive\\definitions.learningagentsdrive.h",
+            "f:\\unreal projects\\learningagentsdrive\\source\\learningagentsdrive\\learningagentsdrivegamemode.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\serverstatreplicator.generated.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamemodebase.generated.h",
+            "f:\\unreal projects\\learningagentsdrive\\intermediate\\build\\win64\\unrealeditor\\inc\\learningagentsdrive\\uht\\learningagentsdrivegamemode.generated.h",
+            "f:\\unreal projects\\learningagentsdrive\\source\\learningagentsdrive\\learningagentsdriveplayercontroller.h",
+            "f:\\unreal projects\\learningagentsdrive\\intermediate\\build\\win64\\unrealeditor\\inc\\learningagentsdrive\\uht\\learningagentsdriveplayercontroller.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

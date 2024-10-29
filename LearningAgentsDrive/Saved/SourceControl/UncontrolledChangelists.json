@@ -1,0 +1,30 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"F:/Unreal Projects/LearningAgentsDrive/Content/__ExternalActors__/VehicleTemplate/Maps/VehicleAdvExampleMap/2/WO/0EZ2NLTNCNYP4X9VX7VN4K.uasset",
+				"F:/Unreal Projects/LearningAgentsDrive/Content/__ExternalActors__/VehicleTemplate/Maps/VehicleAdvExampleMap/8/7P/3TP1JO4911YC9PU49DXKO4.uasset",
+				"F:/Unreal Projects/LearningAgentsDrive/Content/__ExternalActors__/VehicleTemplate/Maps/VehicleAdvExampleMap/2/PH/BFCEV42G115OC86USOEKPQ.uasset",
+				"F:/Unreal Projects/LearningAgentsDrive/Content/BP_SportCarTrackSpline.uasset",
+				"F:/Unreal Projects/LearningAgentsDrive/Content/VehicleTemplate/Blueprints/SportsCar/BP_SportsCar_Pawn.uasset",
+				"F:/Unreal Projects/LearningAgentsDrive/Content/BP_RLTrainingManager.uasset",
+				"F:/Unreal Projects/LearningAgentsDrive/Content/DA_DrivingNetwork.uasset",
+				"F:/Unreal Projects/LearningAgentsDrive/Content/__ExternalActors__/VehicleTemplate/Maps/VehicleAdvExampleMap/1/J7/ITULJQ4J3KYJCZLAO6836N.uasset",
+				"F:/Unreal Projects/LearningAgentsDrive/Content/__ExternalActors__/VehicleTemplate/Maps/VehicleAdvExampleMap/D/7D/370AYDWXSWBFSX664L91YD.uasset",
+				"F:/Unreal Projects/LearningAgentsDrive/Content/BP_DrivingInteractor.uasset",
+				"F:/Unreal Projects/LearningAgentsDrive/Content/BP_DrivingPolicy.uasset",
+				"F:/Unreal Projects/LearningAgentsDrive/Content/BP_DrivingRLTrainer.uasset",
+				"F:/Unreal Projects/LearningAgentsDrive/Content/__ExternalActors__/VehicleTemplate/Maps/VehicleAdvExampleMap/2/IY/WKX37K98DW9DUOML8K6X0A.uasset",
+				"D:/Users/tucha/Documents/Unreal Projects/LearningAgentsDrive/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset",
+				"D:/Users/tucha/Documents/Unreal Projects/LearningAgentsDrive/Content/VehicleTemplate/Blueprints/SportsCar/BP_SportsCar_Pawn.uasset",
+				"D:/Users/tucha/Documents/Unreal Projects/LearningAgentsDrive/Content/__ExternalActors__/VehicleTemplate/Maps/VehicleAdvExampleMap/2/IY/WKX37K98DW9DUOML8K6X0A.uasset",
+				"D:/Users/tucha/Documents/Unreal Projects/LearningAgentsDrive/Content/VehicleTemplate/Maps/VehicleAdvExampleMap.umap",
+				"D:/Users/tucha/Documents/Unreal Projects/LearningAgentsDrive/Content/BP_RLTrainingManager.uasset",
+				"D:/Users/tucha/Documents/Unreal Projects/LearningAgentsDrive/Content/__ExternalObjects__/VehicleTemplate/Maps/VehicleAdvExampleMap/C/K0/WF66B7GGAJUNVIZUUMX1TA.uasset"
+			]
+		}
+	]
+}

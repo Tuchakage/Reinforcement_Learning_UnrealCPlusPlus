@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "LearningAgentsDrive",
+			"Path": "..\\Source\\LearningAgentsDrive.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "LearningAgentsDriveEditor",
+			"Path": "..\\Source\\LearningAgentsDriveEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

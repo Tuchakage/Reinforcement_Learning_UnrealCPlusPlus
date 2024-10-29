@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\users\\tucha\\documents\\unreal projects\\learningagentsdrive\\intermediate\\build\\win64\\unrealeditor\\inc\\learningagentsdrive\\uht\\learningagentsdriveplayercontroller.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\users\\tucha\\documents\\unreal projects\\learningagentsdrive\\intermediate\\build\\win64\\x64\\learningagentsdriveeditor\\development\\unrealed\\sharedpch.unrealed.cpp20.h.pch",
+        "Includes": [
+            "d:\\users\\tucha\\documents\\unreal projects\\learningagentsdrive\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\learningagentsdrive\\definitions.learningagentsdrive.h",
+            "d:\\users\\tucha\\documents\\unreal projects\\learningagentsdrive\\source\\learningagentsdrive\\learningagentsdriveplayercontroller.h",
+            "d:\\users\\tucha\\documents\\unreal projects\\learningagentsdrive\\intermediate\\build\\win64\\unrealeditor\\inc\\learningagentsdrive\\uht\\learningagentsdriveplayercontroller.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\LearningAgentsDrive.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\LearningAgentsDrive.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\LearningAgentsDriveEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\.vsconfig" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\LearningAgentsDrive">
+      <UniqueIdentifier>{5A8765C0-FEC7-344E-97B9-1780C164A0D5}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\LearningAgentsDrive\DrivingInteractor.cpp">
+      <Filter>Source\LearningAgentsDrive</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\LearningAgentsDrive\DrivingInteractor.h">
+      <Filter>Source\LearningAgentsDrive</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\LearningAgentsDrive\DrivingPolicy.cpp">
+      <Filter>Source\LearningAgentsDrive</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\LearningAgentsDrive\DrivingPolicy.h">
+      <Filter>Source\LearningAgentsDrive</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\LearningAgentsDrive\DrivingRLTrainer.cpp">
+      <Filter>Source\LearningAgentsDrive</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\LearningAgentsDrive\DrivingRLTrainer.h">
+      <Filter>Source\LearningAgentsDrive</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\LearningAgentsDrive\LearningAgentsDrive.Build.cs">
+      <Filter>Source\LearningAgentsDrive</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\LearningAgentsDrive\LearningAgentsDrive.cpp">
+      <Filter>Source\LearningAgentsDrive</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\LearningAgentsDrive\LearningAgentsDrive.h">
+      <Filter>Source\LearningAgentsDrive</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\LearningAgentsDrive\LearningAgentsDriveGameMode.cpp">
+      <Filter>Source\LearningAgentsDrive</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\LearningAgentsDrive\LearningAgentsDriveGameMode.h">
+      <Filter>Source\LearningAgentsDrive</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\LearningAgentsDrive\LearningAgentsDriveOffroadCar.cpp">
+      <Filter>Source\LearningAgentsDrive</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\LearningAgentsDrive\LearningAgentsDriveOffroadCar.h">
+      <Filter>Source\LearningAgentsDrive</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\LearningAgentsDrive\LearningAgentsDriveOffroadWheelFront.cpp">
+      <Filter>Source\LearningAgentsDrive</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\LearningAgentsDrive\LearningAgentsDriveOffroadWheelFront.h">
+      <Filter>Source\LearningAgentsDrive</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\LearningAgentsDrive\LearningAgentsDriveOffroadWheelRear.cpp">
+      <Filter>Source\LearningAgentsDrive</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\LearningAgentsDrive\LearningAgentsDriveOffroadWheelRear.h">
+      <Filter>Source\LearningAgentsDrive</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\LearningAgentsDrive\LearningAgentsDrivePawn.cpp">
+      <Filter>Source\LearningAgentsDrive</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\LearningAgentsDrive\LearningAgentsDrivePawn.h">
+      <Filter>Source\LearningAgentsDrive</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\LearningAgentsDrive\LearningAgentsDrivePlayerController.cpp">
+      <Filter>Source\LearningAgentsDrive</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\LearningAgentsDrive\LearningAgentsDrivePlayerController.h">
+      <Filter>Source\LearningAgentsDrive</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\LearningAgentsDrive\LearningAgentsDriveSportsCar.cpp">
+      <Filter>Source\LearningAgentsDrive</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\LearningAgentsDrive\LearningAgentsDriveSportsCar.h">
+      <Filter>Source\LearningAgentsDrive</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\LearningAgentsDrive\LearningAgentsDriveSportsWheelFront.cpp">
+      <Filter>Source\LearningAgentsDrive</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\LearningAgentsDrive\LearningAgentsDriveSportsWheelFront.h">
+      <Filter>Source\LearningAgentsDrive</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\LearningAgentsDrive\LearningAgentsDriveSportsWheelRear.cpp">
+      <Filter>Source\LearningAgentsDrive</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\LearningAgentsDrive\LearningAgentsDriveSportsWheelRear.h">
+      <Filter>Source\LearningAgentsDrive</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\LearningAgentsDrive\LearningAgentsDriveUI.cpp">
+      <Filter>Source\LearningAgentsDrive</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\LearningAgentsDrive\LearningAgentsDriveUI.h">
+      <Filter>Source\LearningAgentsDrive</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\LearningAgentsDrive\LearningAgentsDriveWheelFront.cpp">
+      <Filter>Source\LearningAgentsDrive</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\LearningAgentsDrive\LearningAgentsDriveWheelFront.h">
+      <Filter>Source\LearningAgentsDrive</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\LearningAgentsDrive\LearningAgentsDriveWheelRear.cpp">
+      <Filter>Source\LearningAgentsDrive</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\LearningAgentsDrive\LearningAgentsDriveWheelRear.h">
+      <Filter>Source\LearningAgentsDrive</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\LearningAgentsDrive\RLTrainingManager.cpp">
+      <Filter>Source\LearningAgentsDrive</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\LearningAgentsDrive\RLTrainingManager.h">
+      <Filter>Source\LearningAgentsDrive</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\LearningAgentsDrive\SportCarTrackSpline.cpp">
+      <Filter>Source\LearningAgentsDrive</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\LearningAgentsDrive\SportCarTrackSpline.h">
+      <Filter>Source\LearningAgentsDrive</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

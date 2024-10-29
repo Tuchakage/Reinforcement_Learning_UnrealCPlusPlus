@@ -1,0 +1,20 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\users\\tucha\\documents\\unreal projects\\learningagentsdrive\\source\\learningagentsdrive\\rltrainingmanager.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\users\\tucha\\documents\\unreal projects\\learningagentsdrive\\intermediate\\build\\win64\\x64\\learningagentsdriveeditor\\development\\unrealed\\sharedpch.unrealed.cpp20.h.pch",
+        "Includes": [
+            "d:\\users\\tucha\\documents\\unreal projects\\learningagentsdrive\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\learningagentsdrive\\definitions.learningagentsdrive.h",
+            "d:\\users\\tucha\\documents\\unreal projects\\learningagentsdrive\\source\\learningagentsdrive\\rltrainingmanager.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\plugins\\experimental\\learningagents\\source\\learningagents\\public\\learningagentsmanager.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\plugins\\experimental\\learningagents\\source\\learning\\public\\learningarray.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\plugins\\experimental\\learningagents\\source\\learning\\public\\multiarrayview.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\plugins\\experimental\\learningagents\\source\\learning\\public\\multiarray.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\plugins\\experimental\\learningagents\\intermediate\\build\\win64\\unrealeditor\\inc\\learningagents\\uht\\learningagentsmanager.generated.h",
+            "d:\\users\\tucha\\documents\\unreal projects\\learningagentsdrive\\intermediate\\build\\win64\\unrealeditor\\inc\\learningagentsdrive\\uht\\rltrainingmanager.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

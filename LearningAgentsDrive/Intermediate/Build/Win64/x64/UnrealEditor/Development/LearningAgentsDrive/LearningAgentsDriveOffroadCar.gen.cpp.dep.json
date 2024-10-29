@@ -1,0 +1,19 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "f:\\unreal projects\\learningagentsdrive\\intermediate\\build\\win64\\unrealeditor\\inc\\learningagentsdrive\\uht\\learningagentsdriveoffroadcar.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "f:\\unreal projects\\learningagentsdrive\\intermediate\\build\\win64\\x64\\learningagentsdriveeditor\\development\\unrealed\\sharedpch.unrealed.cpp20.h.pch",
+        "Includes": [
+            "f:\\unreal projects\\learningagentsdrive\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\learningagentsdrive\\definitions.learningagentsdrive.h",
+            "f:\\unreal projects\\learningagentsdrive\\source\\learningagentsdrive\\learningagentsdriveoffroadcar.h",
+            "f:\\unreal projects\\learningagentsdrive\\source\\learningagentsdrive\\learningagentsdrivepawn.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\plugins\\experimental\\chaosvehiclesplugin\\source\\chaosvehicles\\public\\wheeledvehiclepawn.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\plugins\\experimental\\chaosvehiclesplugin\\intermediate\\build\\win64\\unrealeditor\\inc\\chaosvehicles\\uht\\wheeledvehiclepawn.generated.h",
+            "f:\\unreal projects\\learningagentsdrive\\intermediate\\build\\win64\\unrealeditor\\inc\\learningagentsdrive\\uht\\learningagentsdrivepawn.generated.h",
+            "f:\\unreal projects\\learningagentsdrive\\intermediate\\build\\win64\\unrealeditor\\inc\\learningagentsdrive\\uht\\learningagentsdriveoffroadcar.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
