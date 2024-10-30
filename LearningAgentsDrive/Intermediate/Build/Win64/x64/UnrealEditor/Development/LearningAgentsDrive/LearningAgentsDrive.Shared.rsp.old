@@ -259,6 +259,8 @@
 /I "..\Plugins\Experimental\LearningAgents\Intermediate\Build\Win64\UnrealEditor\Inc\LearningAgents\UHT"
 /I "..\Plugins\Experimental\LearningAgents\Source\LearningAgents\Public"
 /I "..\Plugins\Experimental\LearningAgents\Source\Learning\Public"
+/I "..\Plugins\Experimental\LearningAgents\Intermediate\Build\Win64\UnrealEditor\Inc\LearningAgentsTraining\UHT"
+/I "..\Plugins\Experimental\LearningAgents\Source\LearningAgentsTraining\Public"
 /I "F:\Unreal Projects\LearningAgentsDrive\Intermediate\Build\Win64\UnrealEditor\Inc\LearningAgentsDrive\UHT"
 /I "F:\Unreal Projects\LearningAgentsDrive\Source"
 /I "..\Plugins\EnhancedInput\Intermediate\Build\Win64\UnrealEditor\Inc\EnhancedInput\UHT"

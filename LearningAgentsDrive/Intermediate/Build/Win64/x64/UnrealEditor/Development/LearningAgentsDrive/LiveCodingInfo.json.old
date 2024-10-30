@@ -2,9 +2,8 @@
 	"RemapUnityFiles": 
 	{
 		"Module.LearningAgentsDrive.cpp.obj": [
-			"DrivingInteractor.gen.cpp.obj",
 			"DrivingPolicy.gen.cpp.obj",
-			"LearningAgentsDrive.init.gen.cpp.obj",
+			"DrivingRLTrainer.gen.cpp.obj",
 			"LearningAgentsDriveGameMode.gen.cpp.obj",
 			"LearningAgentsDriveOffroadCar.gen.cpp.obj",
 			"LearningAgentsDriveOffroadWheelFront.gen.cpp.obj",
@@ -19,8 +18,8 @@
 			"LearningAgentsDriveWheelRear.gen.cpp.obj",
 			"RLTrainingManager.gen.cpp.obj",
 			"SportCarTrackSpline.gen.cpp.obj",
-			"DrivingInteractor.cpp.obj",
 			"DrivingPolicy.cpp.obj",
+			"DrivingRLTrainer.cpp.obj",
 			"LearningAgentsDrive.cpp.obj",
 			"LearningAgentsDriveGameMode.cpp.obj",
 			"LearningAgentsDriveOffroadCar.cpp.obj",
@@ -34,8 +33,11 @@
 			"LearningAgentsDriveUI.cpp.obj",
 			"LearningAgentsDriveWheelFront.cpp.obj",
 			"LearningAgentsDriveWheelRear.cpp.obj",
-			"RLTrainingManager.cpp.obj",
-			"SportCarTrackSpline.cpp.obj"
+			"SportCarTrackSpline.cpp.obj",
+			"DrivingInteractor.gen.cpp.obj",
+			"LearningAgentsDrive.init.gen.cpp.obj",
+			"DrivingInteractor.cpp.obj",
+			"RLTrainingManager.cpp.obj"
 		]
 	}
 }

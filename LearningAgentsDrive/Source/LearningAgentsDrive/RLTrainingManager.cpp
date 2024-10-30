@@ -29,13 +29,13 @@ void ARLTrainingManager::BeginPlay()
 
 	DrivingPolicy->SetupPolicy(DrivingInteractor, PolicySettings, NeuralNetworkAsset);
 	DrivingTrainer->SetupTrainer(DrivingInteractor, DrivingPolicy, nullptr, TrainerSettings);
-	GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, FString::Printf(TEXT("Begin Play ")));
+	GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, FString::Printf(TEXT("Begin Play in Training Manager")));
 }
 
 void ARLTrainingManager::Tick(float Delta)
 {
 	Super::Tick(Delta);
-	GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, FString::Printf(TEXT("Update ")));
+	//GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, FString::Printf(TEXT("Update in Training Manager")));
 	UE_LOG(LogTemp, Display, TEXT("Update"));
 	DrivingTrainer->RunTraining(TrainerTrainingSettings, TrainerGameSettings, TrainerPathSettings, CriticSettings, false, true, true);
 }

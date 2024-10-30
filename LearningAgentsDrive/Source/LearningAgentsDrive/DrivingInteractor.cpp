@@ -13,6 +13,7 @@
 //This function will be called once by the training manager during the initial setup
 void UDrivingInteractor::SetupObservations_Implementation()
 {
+	UE_LOG(LogTemp, Display, TEXT("Observation Setup in Interactor"));
 	//Observe the position of the track
 	TrackPositionObservation = UPlanarPositionObservation::AddPlanarPositionObservation(this, FName("TrackPositionObservation"), 100, FVector(1, 0, 0), FVector(0, 1, 0));
 
@@ -32,12 +33,14 @@ void UDrivingInteractor::SetupObservations_Implementation()
 	AActor* TrackSplineActor = UGameplayStatics::GetActorOfClass(GetWorld(), ASportCarTrackSpline::StaticClass());
 
 	//Cast to SportCarTrackSpline
-	if (ASportCarTrackSpline* Spline = Cast<ASportCarTrackSpline>(TrackSpline))
+	if (ASportCarTrackSpline* Spline = Cast<ASportCarTrackSpline>(TrackSplineActor))
 	{
 		//Get the Spline Component and keep a reference of it here
 		TrackSpline = Spline->SplineComponent;
 
 	}
+	
+	//GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, FString::Printf(TEXT("Observation Setup")));
 }
 
 //We need to define how each of the observations are gathered for our position observation
@@ -87,6 +90,7 @@ void UDrivingInteractor::SetupActions_Implementation()
 {
 	ThrottleBrakeAction = UFloatAction::AddFloatAction(this, FName("ThrottleBrakeAction"));
 	SteeringAction = UFloatAction::AddFloatAction(this, FName("SteeringAction"));
+	UE_LOG(LogTemp, Display, TEXT("Action Setup"));
 }
 
 void UDrivingInteractor::GetActions_Implementation(const TArray<int32>& AgentIds)
@@ -94,16 +98,20 @@ void UDrivingInteractor::GetActions_Implementation(const TArray<int32>& AgentIds
 	//For each Agent 
 	for (int AgID : AgentIds)
 	{
-
+		
 		//Get reference to the Agent Object
 		UObject* agent = GetAgent(AgID, ALearningAgentsDrivePawn::StaticClass());
 
+		UE_LOG(LogTemp, Log, TEXT("The name of agent: %i is: %s"),AgID,  *agent->GetName());
 		//Get the value of the float action for the Throttle & Brake actions
 		float ThrottleBrakeFloat = ThrottleBrakeAction->GetFloatAction(AgID);
 
-		//Cast to Vehicle Component Of Agent
-		if (UChaosVehicleMovementComponent* VehicleComponent = Cast<UChaosVehicleMovementComponent>(agent))
+		//Cast to Driving Pawn Of Agent
+		if (ALearningAgentsDrivePawn* CarPawn = Cast<ALearningAgentsDrivePawn>(agent))
 		{
+			//Get the Vehicle Component
+			UChaosVehicleMovementComponent* VehicleComponent = CarPawn->GetVehicleMovementComponent();
+			UE_LOG(LogTemp, Display, TEXT("Get Action for %i"), AgID);
 			//If Car is trying to move forawrd
 			if (ThrottleBrakeFloat > 0)
 			{
@@ -125,6 +133,12 @@ void UDrivingInteractor::GetActions_Implementation(const TArray<int32>& AgentIds
 			//Steer
 			VehicleComponent->SetSteeringInput(SteeringAction->GetFloatAction(AgID));
 			
+			//GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Red, FString::Printf(TEXT("Do an Action")));
+			
+		}
+		else 
+		{
+			UE_LOG(LogTemp, Display, TEXT("Agent ID: %i cannot cast to UChaosVehicleMovementComponent "), AgID);
 		}
 
 	}

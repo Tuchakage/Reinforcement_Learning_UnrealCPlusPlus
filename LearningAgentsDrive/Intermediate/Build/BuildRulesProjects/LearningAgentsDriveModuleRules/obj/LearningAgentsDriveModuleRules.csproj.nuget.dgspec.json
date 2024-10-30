@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Unreal Projects\\LearningAgentsDrive\\Intermediate\\Build\\BuildRulesProjects\\LearningAgentsDriveModuleRules\\LearningAgentsDriveModuleRules.csproj": {}
+    "F:\\Unreal Projects\\Reinforcement_Learning_UnrealCPlusPlus\\LearningAgentsDrive\\Intermediate\\Build\\BuildRulesProjects\\LearningAgentsDriveModuleRules\\LearningAgentsDriveModuleRules.csproj": {}
   },
   "projects": {
     "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Intermediate\\Build\\BuildRulesProjects\\UE5ProgramRules\\UE5ProgramRules.csproj": {
@@ -953,14 +953,14 @@
         }
       }
     },
-    "F:\\Unreal Projects\\LearningAgentsDrive\\Intermediate\\Build\\BuildRulesProjects\\LearningAgentsDriveModuleRules\\LearningAgentsDriveModuleRules.csproj": {
+    "F:\\Unreal Projects\\Reinforcement_Learning_UnrealCPlusPlus\\LearningAgentsDrive\\Intermediate\\Build\\BuildRulesProjects\\LearningAgentsDriveModuleRules\\LearningAgentsDriveModuleRules.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Unreal Projects\\LearningAgentsDrive\\Intermediate\\Build\\BuildRulesProjects\\LearningAgentsDriveModuleRules\\LearningAgentsDriveModuleRules.csproj",
+        "projectUniqueName": "F:\\Unreal Projects\\Reinforcement_Learning_UnrealCPlusPlus\\LearningAgentsDrive\\Intermediate\\Build\\BuildRulesProjects\\LearningAgentsDriveModuleRules\\LearningAgentsDriveModuleRules.csproj",
         "projectName": "LearningAgentsDriveModuleRules",
-        "projectPath": "F:\\Unreal Projects\\LearningAgentsDrive\\Intermediate\\Build\\BuildRulesProjects\\LearningAgentsDriveModuleRules\\LearningAgentsDriveModuleRules.csproj",
+        "projectPath": "F:\\Unreal Projects\\Reinforcement_Learning_UnrealCPlusPlus\\LearningAgentsDrive\\Intermediate\\Build\\BuildRulesProjects\\LearningAgentsDriveModuleRules\\LearningAgentsDriveModuleRules.csproj",
         "packagesPath": "C:\\Users\\tucha\\.nuget\\packages\\",
-        "outputPath": "F:\\Unreal Projects\\LearningAgentsDrive\\Intermediate\\Build\\BuildRulesProjects\\LearningAgentsDriveModuleRules\\obj\\",
+        "outputPath": "F:\\Unreal Projects\\Reinforcement_Learning_UnrealCPlusPlus\\LearningAgentsDrive\\Intermediate\\Build\\BuildRulesProjects\\LearningAgentsDriveModuleRules\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tucha\\AppData\\Roaming\\NuGet\\NuGet.Config",

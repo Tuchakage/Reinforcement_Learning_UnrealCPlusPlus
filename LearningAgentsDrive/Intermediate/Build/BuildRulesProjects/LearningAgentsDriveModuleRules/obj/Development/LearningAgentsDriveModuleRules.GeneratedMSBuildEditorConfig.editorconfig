@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = LearningAgentsDriveModuleRules
-build_property.ProjectDir = F:\Unreal Projects\LearningAgentsDrive\Intermediate\Build\BuildRulesProjects\LearningAgentsDriveModuleRules\
+build_property.ProjectDir = F:\Unreal Projects\Reinforcement_Learning_UnrealCPlusPlus\LearningAgentsDrive\Intermediate\Build\BuildRulesProjects\LearningAgentsDriveModuleRules\

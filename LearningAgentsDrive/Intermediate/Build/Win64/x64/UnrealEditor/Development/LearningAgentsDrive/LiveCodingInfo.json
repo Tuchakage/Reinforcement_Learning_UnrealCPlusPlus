@@ -20,7 +20,6 @@
 			"LearningAgentsDriveWheelRear.gen.cpp.obj",
 			"RLTrainingManager.gen.cpp.obj",
 			"SportCarTrackSpline.gen.cpp.obj",
-			"DrivingInteractor.cpp.obj",
 			"DrivingPolicy.cpp.obj",
 			"DrivingRLTrainer.cpp.obj",
 			"LearningAgentsDrive.cpp.obj",
@@ -36,8 +35,9 @@
 			"LearningAgentsDriveUI.cpp.obj",
 			"LearningAgentsDriveWheelFront.cpp.obj",
 			"LearningAgentsDriveWheelRear.cpp.obj",
-			"RLTrainingManager.cpp.obj",
-			"SportCarTrackSpline.cpp.obj"
+			"SportCarTrackSpline.cpp.obj",
+			"DrivingInteractor.cpp.obj",
+			"RLTrainingManager.cpp.obj"
 		]
 	}
 }
