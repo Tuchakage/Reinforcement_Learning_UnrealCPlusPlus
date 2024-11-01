@@ -23,7 +23,7 @@ void UDrivingInteractor::SetupObservations_Implementation()
 	//Observe Global Position of track
 	TrackGlobalPositionObservation = UAngleObservation::AddAngleObservation(this, FName("TrackGlobalPositionObservation"));
 
-	// Observating the velocity of the Car
+	// Observe the velocity of the Car
 	CarVelocityObservation = UPlanarVelocityObservation::AddPlanarVelocityObservation(this, FName("CarVelocityObservation"), 200, FVector(1, 0, 0), FVector(0, 1, 0));
 
 	// Adds a new spline component helper to the given manager component
@@ -102,7 +102,7 @@ void UDrivingInteractor::GetActions_Implementation(const TArray<int32>& AgentIds
 		//Get reference to the Agent Object
 		UObject* agent = GetAgent(AgID, ALearningAgentsDrivePawn::StaticClass());
 
-		UE_LOG(LogTemp, Log, TEXT("The name of agent: %i is: %s"),AgID,  *agent->GetName());
+		//UE_LOG(LogTemp, Log, TEXT("The name of agent: %i is: %s"),AgID,  *agent->GetName());
 		//Get the value of the float action for the Throttle & Brake actions
 		float ThrottleBrakeFloat = ThrottleBrakeAction->GetFloatAction(AgID);
 
@@ -111,7 +111,7 @@ void UDrivingInteractor::GetActions_Implementation(const TArray<int32>& AgentIds
 		{
 			//Get the Vehicle Component
 			UChaosVehicleMovementComponent* VehicleComponent = CarPawn->GetVehicleMovementComponent();
-			UE_LOG(LogTemp, Display, TEXT("Get Action for %i"), AgID);
+			//UE_LOG(LogTemp, Display, TEXT("Get Action for %i"), AgID);
 			//If Car is trying to move forawrd
 			if (ThrottleBrakeFloat > 0)
 			{

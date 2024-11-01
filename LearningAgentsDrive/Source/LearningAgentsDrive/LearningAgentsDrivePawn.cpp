@@ -85,30 +85,30 @@ void ALearningAgentsDrivePawn::SetupPlayerInputComponent(class UInputComponent* 
 	if (UEnhancedInputComponent* EnhancedInputComponent = Cast<UEnhancedInputComponent>(PlayerInputComponent))
 	{
 		// steering 
-		EnhancedInputComponent->BindAction(SteeringAction, ETriggerEvent::Triggered, this, &ALearningAgentsDrivePawn::Steering);
-		EnhancedInputComponent->BindAction(SteeringAction, ETriggerEvent::Completed, this, &ALearningAgentsDrivePawn::Steering);
+		//EnhancedInputComponent->BindAction(SteeringAction, ETriggerEvent::Triggered, this, &ALearningAgentsDrivePawn::Steering);
+		//EnhancedInputComponent->BindAction(SteeringAction, ETriggerEvent::Completed, this, &ALearningAgentsDrivePawn::Steering);
 
-		// throttle 
-		EnhancedInputComponent->BindAction(ThrottleAction, ETriggerEvent::Triggered, this, &ALearningAgentsDrivePawn::Throttle);
-		EnhancedInputComponent->BindAction(ThrottleAction, ETriggerEvent::Completed, this, &ALearningAgentsDrivePawn::Throttle);
+		//// throttle 
+		//EnhancedInputComponent->BindAction(ThrottleAction, ETriggerEvent::Triggered, this, &ALearningAgentsDrivePawn::Throttle);
+		//EnhancedInputComponent->BindAction(ThrottleAction, ETriggerEvent::Completed, this, &ALearningAgentsDrivePawn::Throttle);
 
-		// break 
-		EnhancedInputComponent->BindAction(BrakeAction, ETriggerEvent::Triggered, this, &ALearningAgentsDrivePawn::Brake);
-		EnhancedInputComponent->BindAction(BrakeAction, ETriggerEvent::Started, this, &ALearningAgentsDrivePawn::StartBrake);
-		EnhancedInputComponent->BindAction(BrakeAction, ETriggerEvent::Completed, this, &ALearningAgentsDrivePawn::StopBrake);
+		//// break 
+		//EnhancedInputComponent->BindAction(BrakeAction, ETriggerEvent::Triggered, this, &ALearningAgentsDrivePawn::Brake);
+		//EnhancedInputComponent->BindAction(BrakeAction, ETriggerEvent::Started, this, &ALearningAgentsDrivePawn::StartBrake);
+		//EnhancedInputComponent->BindAction(BrakeAction, ETriggerEvent::Completed, this, &ALearningAgentsDrivePawn::StopBrake);
 
-		// handbrake 
-		EnhancedInputComponent->BindAction(HandbrakeAction, ETriggerEvent::Started, this, &ALearningAgentsDrivePawn::StartHandbrake);
-		EnhancedInputComponent->BindAction(HandbrakeAction, ETriggerEvent::Completed, this, &ALearningAgentsDrivePawn::StopHandbrake);
+		//// handbrake 
+		//EnhancedInputComponent->BindAction(HandbrakeAction, ETriggerEvent::Started, this, &ALearningAgentsDrivePawn::StartHandbrake);
+		//EnhancedInputComponent->BindAction(HandbrakeAction, ETriggerEvent::Completed, this, &ALearningAgentsDrivePawn::StopHandbrake);
 
-		// look around 
-		EnhancedInputComponent->BindAction(LookAroundAction, ETriggerEvent::Triggered, this, &ALearningAgentsDrivePawn::LookAround);
+		//// look around 
+		//EnhancedInputComponent->BindAction(LookAroundAction, ETriggerEvent::Triggered, this, &ALearningAgentsDrivePawn::LookAround);
 
-		// toggle camera 
-		EnhancedInputComponent->BindAction(ToggleCameraAction, ETriggerEvent::Triggered, this, &ALearningAgentsDrivePawn::ToggleCamera);
+		//// toggle camera 
+		//EnhancedInputComponent->BindAction(ToggleCameraAction, ETriggerEvent::Triggered, this, &ALearningAgentsDrivePawn::ToggleCamera);
 
-		// reset the vehicle 
-		EnhancedInputComponent->BindAction(ResetVehicleAction, ETriggerEvent::Triggered, this, &ALearningAgentsDrivePawn::ResetVehicle);
+		//// reset the vehicle 
+		//EnhancedInputComponent->BindAction(ResetVehicleAction, ETriggerEvent::Triggered, this, &ALearningAgentsDrivePawn::ResetVehicle);
 	}
 	else
 	{
@@ -228,27 +228,27 @@ void ALearningAgentsDrivePawn::ResetVehicle(const FInputActionValue& Value)
 	UE_LOG(LogTemplateVehicle, Error, TEXT("Reset Vehicle"));
 }
 
-void ALearningAgentsDrivePawn::ResetToRandomPointOnSpline(USplineComponent* Spline)
-{
-	FVector locationAtDistanceAlongSpline = Spline->GetLocationAtDistanceAlongSpline(FMath::FRand() * Spline->GetSplineLength(), ESplineCoordinateSpace::World);
-	FRotator rotationAtDistanceAlongSpline = Spline->GetRotationAtDistanceAlongSpline(FMath::FRand() * Spline->GetSplineLength(), ESplineCoordinateSpace::World);
-
-
-
-	//Randomly pick a location in the X & Y axis
-	FVector transformLocation = FVector((FMath::FRand() - 0.5) * 1200, (FMath::FRand() - 0.5) * 1200, 50);
-
-	//Randomly pick a rotation in the Z Yaw Axis
-	FRotator transformRotation = FRotator(0,rotationAtDistanceAlongSpline.Yaw + ((FMath::FRand() - 0.5) * 90), 0);
-	FTransform CarTransform(transformRotation, transformLocation, FVector(1, 1, 1));
-
-	SetActorTransform(CarTransform, false, nullptr, ETeleportType::TeleportPhysics);
-
-	// Interupt any angular or any linear movement
-	GetMesh()->SetPhysicsAngularVelocityInDegrees(FVector(0, 0, 0));
-	GetMesh()->SetPhysicsLinearVelocity(FVector(0, 0, 0));
-
-
-}
+//void ALearningAgentsDrivePawn::ResetToRandomPointOnSpline(USplineComponent* Spline)
+//{
+//	//FVector locationAtDistanceAlongSpline = Spline->GetLocationAtDistanceAlongSpline(FMath::FRand() * Spline->GetSplineLength(), ESplineCoordinateSpace::World);
+//	//FRotator rotationAtDistanceAlongSpline = Spline->GetRotationAtDistanceAlongSpline(FMath::FRand() * Spline->GetSplineLength(), ESplineCoordinateSpace::World);
+//
+//
+//
+//	////Randomly pick a location in the X & Y axis
+//	//FVector transformLocation = FVector((FMath::FRand() - 0.5) * 1200, (FMath::FRand() - 0.5) * 1200, 50);
+//
+//	////Randomly pick a rotation in the Z Yaw Axis
+//	//FRotator transformRotation = FRotator(0,rotationAtDistanceAlongSpline.Yaw + ((FMath::FRand() - 0.5) * 90), 0);
+//	//FTransform CarTransform(transformRotation, transformLocation, FVector(1, 1, 1));
+//
+//	//SetActorTransform(CarTransform, false, nullptr, ETeleportType::TeleportPhysics);
+//
+//	//// Interupt any angular or any linear movement
+//	//GetMesh()->SetPhysicsAngularVelocityInDegrees(FVector(0, 0, 0));
+//	//GetMesh()->SetPhysicsLinearVelocity(FVector(0, 0, 0));
+//
+//
+//}
 
 #undef LOCTEXT_NAMESPACE

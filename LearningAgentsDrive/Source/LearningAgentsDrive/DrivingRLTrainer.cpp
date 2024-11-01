@@ -24,7 +24,7 @@ void UDrivingRLTrainer::SetupRewards_Implementation()
 	//Add a penalty to the agent if it goes too far from the track
 	OffTrackPenalty = UPlanarPositionDifferencePenalty::AddPlanarPositionDifferencePenalty(this, FName("OffTrackPenalty"), 1.f, 100.f, 800, FVector(1, 0, 0), FVector(0, 1, 0));
 
-	//Reward player fot he Speed
+	//Reward player for the Speed
 	VelocityAlongTrackReward = UScalarVelocityReward::AddScalarVelocityReward(this, FName("SpeedReward"), 0.1f, 200.f);
 
 	// Adds a new spline component helper to the given manager component
@@ -58,8 +58,6 @@ void UDrivingRLTrainer::SetRewards_Implementation(const TArray<int32>& AgentIds)
 			//Set Rewards
 			VelocityAlongTrackReward->SetScalarVelocityReward(AgID, velocityAlongSpline);
 		}
-
-
 	}
 }
 
@@ -85,7 +83,7 @@ void UDrivingRLTrainer::SetCompletions_Implementation(const TArray<int32>& Agent
 
 			FVector nearestPositionOnSpline = SplineComponentRewardHelper->GetNearestPositionOnSpline(AgID, TrackSpline, agentPosition, ESplineCoordinateSpace::World);
 
-			//Sets data for completion
+			//Terminates the episode when the agent has driven off the track
 			OffTrackTermination->SetPlanarPositionDifferenceCompletion(AgID, nearestPositionOnSpline, agentPosition);
 		}
 	}

@@ -9,6 +9,7 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class USplineComponent;
 #ifdef LEARNINGAGENTSDRIVE_LearningAgentsDrivePawn_generated_h
 #error "LearningAgentsDrivePawn.generated.h already included, missing '#pragma once' in LearningAgentsDrivePawn.h"
 #endif

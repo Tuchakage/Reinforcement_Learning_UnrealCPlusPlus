@@ -6,13 +6,16 @@
 
 #include "UObject/GeneratedCppIncludes.h"
 #include "LearningAgentsDrive/RLTrainingManager.h"
+#include "LearningAgentsPolicy.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeRLTrainingManager() {}
 // Cross Module References
 	LEARNINGAGENTS_API UClass* Z_Construct_UClass_ALearningAgentsManager();
 	LEARNINGAGENTS_API UClass* Z_Construct_UClass_ULearningAgentsNeuralNetwork_NoRegister();
+	LEARNINGAGENTS_API UScriptStruct* Z_Construct_UScriptStruct_FLearningAgentsPolicySettings();
 	LEARNINGAGENTSDRIVE_API UClass* Z_Construct_UClass_ARLTrainingManager();
 	LEARNINGAGENTSDRIVE_API UClass* Z_Construct_UClass_ARLTrainingManager_NoRegister();
+	LEARNINGAGENTSDRIVE_API UClass* Z_Construct_UClass_UDrivingPolicy_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_LearningAgentsDrive();
 // End Cross Module References
 	void ARLTrainingManager::StaticRegisterNativesARLTrainingManager()
@@ -29,6 +32,14 @@ void EmptyLinkFunctionForGeneratedCodeRLTrainingManager() {}
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_DrivingPolicy_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_DrivingPolicy;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_PolicySettings_MetaData[];
+#endif
+		static const UECodeGen_Private::FStructPropertyParams NewProp_PolicySettings;
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_NeuralNetworkAsset_MetaData[];
 #endif
@@ -52,6 +63,21 @@ void EmptyLinkFunctionForGeneratedCodeRLTrainingManager() {}
 	};
 #endif
 #if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARLTrainingManager_Statics::NewProp_DrivingPolicy_MetaData[] = {
+		{ "Category", "RLTrainingManager" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "RLTrainingManager.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ARLTrainingManager_Statics::NewProp_DrivingPolicy = { "DrivingPolicy", nullptr, (EPropertyFlags)0x002008000009000d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ARLTrainingManager, DrivingPolicy), Z_Construct_UClass_UDrivingPolicy_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ARLTrainingManager_Statics::NewProp_DrivingPolicy_MetaData), Z_Construct_UClass_ARLTrainingManager_Statics::NewProp_DrivingPolicy_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARLTrainingManager_Statics::NewProp_PolicySettings_MetaData[] = {
+		{ "Category", "RLTrainingManager" },
+		{ "ModuleRelativePath", "RLTrainingManager.h" },
+	};
+#endif
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_ARLTrainingManager_Statics::NewProp_PolicySettings = { "PolicySettings", nullptr, (EPropertyFlags)0x0020080000010005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ARLTrainingManager, PolicySettings), Z_Construct_UScriptStruct_FLearningAgentsPolicySettings, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ARLTrainingManager_Statics::NewProp_PolicySettings_MetaData), Z_Construct_UClass_ARLTrainingManager_Statics::NewProp_PolicySettings_MetaData) }; // 383946298
+#if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARLTrainingManager_Statics::NewProp_NeuralNetworkAsset_MetaData[] = {
 		{ "Category", "RLTrainingManager" },
 #if !UE_BUILD_SHIPPING
@@ -65,6 +91,8 @@ void EmptyLinkFunctionForGeneratedCodeRLTrainingManager() {}
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ARLTrainingManager_Statics::NewProp_NeuralNetworkAsset = { "NeuralNetworkAsset", nullptr, (EPropertyFlags)0x0010000000010005, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ARLTrainingManager, NeuralNetworkAsset), Z_Construct_UClass_ULearningAgentsNeuralNetwork_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ARLTrainingManager_Statics::NewProp_NeuralNetworkAsset_MetaData), Z_Construct_UClass_ARLTrainingManager_Statics::NewProp_NeuralNetworkAsset_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ARLTrainingManager_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARLTrainingManager_Statics::NewProp_DrivingPolicy,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARLTrainingManager_Statics::NewProp_PolicySettings,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARLTrainingManager_Statics::NewProp_NeuralNetworkAsset,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ARLTrainingManager_Statics::StaticCppClassTypeInfo = {
@@ -105,9 +133,9 @@ void EmptyLinkFunctionForGeneratedCodeRLTrainingManager() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_LearningAgentsDrive_Source_LearningAgentsDrive_RLTrainingManager_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ARLTrainingManager, ARLTrainingManager::StaticClass, TEXT("ARLTrainingManager"), &Z_Registration_Info_UClass_ARLTrainingManager, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ARLTrainingManager), 1083564441U) },
+		{ Z_Construct_UClass_ARLTrainingManager, ARLTrainingManager::StaticClass, TEXT("ARLTrainingManager"), &Z_Registration_Info_UClass_ARLTrainingManager, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ARLTrainingManager), 2205740678U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_LearningAgentsDrive_Source_LearningAgentsDrive_RLTrainingManager_h_4232603136(TEXT("/Script/LearningAgentsDrive"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_LearningAgentsDrive_Source_LearningAgentsDrive_RLTrainingManager_h_2924390090(TEXT("/Script/LearningAgentsDrive"),
 		Z_CompiledInDeferFile_FID_LearningAgentsDrive_Source_LearningAgentsDrive_RLTrainingManager_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_LearningAgentsDrive_Source_LearningAgentsDrive_RLTrainingManager_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

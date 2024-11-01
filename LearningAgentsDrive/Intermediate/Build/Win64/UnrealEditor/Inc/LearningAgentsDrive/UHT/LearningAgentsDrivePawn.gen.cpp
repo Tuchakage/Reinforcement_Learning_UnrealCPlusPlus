@@ -11,6 +11,7 @@ void EmptyLinkFunctionForGeneratedCodeLearningAgentsDrivePawn() {}
 // Cross Module References
 	CHAOSVEHICLES_API UClass* Z_Construct_UClass_AWheeledVehiclePawn();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_USplineComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 	ENHANCEDINPUT_API UClass* Z_Construct_UClass_UInputAction_NoRegister();
 	LEARNINGAGENTSDRIVE_API UClass* Z_Construct_UClass_ALearningAgentsDrivePawn();
@@ -21,12 +22,23 @@ void EmptyLinkFunctionForGeneratedCodeLearningAgentsDrivePawn() {}
 	{
 		bool bBraking;
 	};
+	struct LearningAgentsDrivePawn_eventResetToRandomPointOnSpline_Parms
+	{
+		USplineComponent* Spline;
+	};
 	static FName NAME_ALearningAgentsDrivePawn_BrakeLights = FName(TEXT("BrakeLights"));
 	void ALearningAgentsDrivePawn::BrakeLights(bool bBraking)
 	{
 		LearningAgentsDrivePawn_eventBrakeLights_Parms Parms;
 		Parms.bBraking=bBraking ? true : false;
 		ProcessEvent(FindFunctionChecked(NAME_ALearningAgentsDrivePawn_BrakeLights),&Parms);
+	}
+	static FName NAME_ALearningAgentsDrivePawn_ResetToRandomPointOnSpline = FName(TEXT("ResetToRandomPointOnSpline"));
+	void ALearningAgentsDrivePawn::ResetToRandomPointOnSpline(USplineComponent* Spline)
+	{
+		LearningAgentsDrivePawn_eventResetToRandomPointOnSpline_Parms Parms;
+		Parms.Spline=Spline;
+		ProcessEvent(FindFunctionChecked(NAME_ALearningAgentsDrivePawn_ResetToRandomPointOnSpline),&Parms);
 	}
 	void ALearningAgentsDrivePawn::StaticRegisterNativesALearningAgentsDrivePawn()
 	{
@@ -70,6 +82,44 @@ void EmptyLinkFunctionForGeneratedCodeLearningAgentsDrivePawn() {}
 		if (!ReturnFunction)
 		{
 			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ALearningAgentsDrivePawn_BrakeLights_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ALearningAgentsDrivePawn_ResetToRandomPointOnSpline_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_Spline_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_Spline;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ALearningAgentsDrivePawn_ResetToRandomPointOnSpline_Statics::NewProp_Spline_MetaData[] = {
+		{ "EditInline", "true" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_ALearningAgentsDrivePawn_ResetToRandomPointOnSpline_Statics::NewProp_Spline = { "Spline", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(LearningAgentsDrivePawn_eventResetToRandomPointOnSpline_Parms, Spline), Z_Construct_UClass_USplineComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ALearningAgentsDrivePawn_ResetToRandomPointOnSpline_Statics::NewProp_Spline_MetaData), Z_Construct_UFunction_ALearningAgentsDrivePawn_ResetToRandomPointOnSpline_Statics::NewProp_Spline_MetaData) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ALearningAgentsDrivePawn_ResetToRandomPointOnSpline_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ALearningAgentsDrivePawn_ResetToRandomPointOnSpline_Statics::NewProp_Spline,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ALearningAgentsDrivePawn_ResetToRandomPointOnSpline_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "LearningAgentsDrivePawn.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ALearningAgentsDrivePawn_ResetToRandomPointOnSpline_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ALearningAgentsDrivePawn, nullptr, "ResetToRandomPointOnSpline", nullptr, nullptr, Z_Construct_UFunction_ALearningAgentsDrivePawn_ResetToRandomPointOnSpline_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ALearningAgentsDrivePawn_ResetToRandomPointOnSpline_Statics::PropPointers), sizeof(LearningAgentsDrivePawn_eventResetToRandomPointOnSpline_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ALearningAgentsDrivePawn_ResetToRandomPointOnSpline_Statics::Function_MetaDataParams), Z_Construct_UFunction_ALearningAgentsDrivePawn_ResetToRandomPointOnSpline_Statics::Function_MetaDataParams) };
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ALearningAgentsDrivePawn_ResetToRandomPointOnSpline_Statics::PropPointers) < 2048);
+	static_assert(sizeof(LearningAgentsDrivePawn_eventResetToRandomPointOnSpline_Parms) < MAX_uint16);
+	UFunction* Z_Construct_UFunction_ALearningAgentsDrivePawn_ResetToRandomPointOnSpline()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ALearningAgentsDrivePawn_ResetToRandomPointOnSpline_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -140,6 +190,7 @@ void EmptyLinkFunctionForGeneratedCodeLearningAgentsDrivePawn() {}
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ALearningAgentsDrivePawn_Statics::DependentSingletons) < 16);
 	const FClassFunctionLinkInfo Z_Construct_UClass_ALearningAgentsDrivePawn_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_ALearningAgentsDrivePawn_BrakeLights, "BrakeLights" }, // 2961196909
+		{ &Z_Construct_UFunction_ALearningAgentsDrivePawn_ResetToRandomPointOnSpline, "ResetToRandomPointOnSpline" }, // 3504325232
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ALearningAgentsDrivePawn_Statics::FuncInfo) < 2048);
 #if WITH_METADATA
@@ -357,9 +408,9 @@ void EmptyLinkFunctionForGeneratedCodeLearningAgentsDrivePawn() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_LearningAgentsDrive_Source_LearningAgentsDrive_LearningAgentsDrivePawn_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ALearningAgentsDrivePawn, ALearningAgentsDrivePawn::StaticClass, TEXT("ALearningAgentsDrivePawn"), &Z_Registration_Info_UClass_ALearningAgentsDrivePawn, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ALearningAgentsDrivePawn), 1811960303U) },
+		{ Z_Construct_UClass_ALearningAgentsDrivePawn, ALearningAgentsDrivePawn::StaticClass, TEXT("ALearningAgentsDrivePawn"), &Z_Registration_Info_UClass_ALearningAgentsDrivePawn, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ALearningAgentsDrivePawn), 258143363U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_LearningAgentsDrive_Source_LearningAgentsDrive_LearningAgentsDrivePawn_h_1602360994(TEXT("/Script/LearningAgentsDrive"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_LearningAgentsDrive_Source_LearningAgentsDrive_LearningAgentsDrivePawn_h_4265274126(TEXT("/Script/LearningAgentsDrive"),
 		Z_CompiledInDeferFile_FID_LearningAgentsDrive_Source_LearningAgentsDrive_LearningAgentsDrivePawn_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_LearningAgentsDrive_Source_LearningAgentsDrive_LearningAgentsDrivePawn_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

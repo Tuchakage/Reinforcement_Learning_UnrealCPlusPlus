@@ -13,6 +13,8 @@ ASportCarTrackSpline::ASportCarTrackSpline()
 	if (SplineComponent)
 	{
 		SplineComponent->SetupAttachment(RootComponent);
+		//Make sure the Spline loops round
+		SplineComponent->SetClosedLoop(true);
 	}
 
 }

@@ -145,5 +145,6 @@ public:
 
 	int AgentId;
 
+	UFUNCTION(BlueprintImplementableEvent)
 	void ResetToRandomPointOnSpline(USplineComponent* Spline);
 };
